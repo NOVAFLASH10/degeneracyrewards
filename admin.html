@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="admin.js"></script>
+</head>
+<body>
+  <div class="background"></div>
+  <h1>Admin Panel</h1>
+
+  <!-- Countdown Timer -->
+  <div>
+    <h2>Set Countdown End Time</h2>
+    <label for="countdown">Countdown End (YYYY-MM-DDTHH:MM):</label>
+    <input type="datetime-local" id="countdown" />
+    <button id="saveCountdown">Save Countdown</button>
+  </div>
+
+  <hr />
+
+  <!-- Leaderboard Editor -->
+  <div>
+    <h2>Leaderboard Editor (Top 1–10)</h2>
+    <form id="leaderboardForm">
+      <div id="users"></div>
+      <button type="submit">Save Leaderboard</button>
+    </form>
+  </div>
+</body>
+</html>

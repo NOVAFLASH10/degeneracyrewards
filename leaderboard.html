@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Leaderboard - Degeneracy</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="leaderboard.js"></script>
+  <style>
+    .how-images img {
+      width: 368px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .how-images img:hover {
+      transform: translateY(-8px);
+    }
+
+    .top-card {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      width: 30%;
+      text-align: center;
+      transition: transform 0.3s;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+    }
+
+    .top-card:hover {
+      transform: translateY(-6px);
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+
+  <header class="top-bar">
+    <div class="left-header">
+      <span class="brand">DEGENERACY</span>
+      <a href="index.html" class="nav-item float-hover">HOME</a>
+      <a href="leaderboard.html" class="nav-item float-hover">LEADERBOARD</a>
+    </div>
+    <div class="right-header">
+      <a href="https://x.com/Degeneracy420" target="_blank"><img src="xx.png" alt="X" class="icon" /></a>
+      <a href="https://discord.gg/MM3bjatyun" target="_blank"><img src="bg.png" alt="Discord" class="icon" /></a>
+      <a href="https://rainbet.com/?r=degeneracy" target="_blank"><img src="rb.png" alt="Rainbet" class="icon" /></a>
+      <a href="https://kick.com/degeneracy420" target="_blank"><img src="kick.jpeg" alt="Kick" class="icon" /></a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <img src="leaderboard.webp" alt="Leaderboard Banner"
+         style="width: 100%; max-height: 250px; object-fit: cover; border-radius: 10px; margin-bottom: 30px;" />
+
+    <!-- HOW IT WORKS Section -->
+    <div style="text-align: left; margin-bottom: 20px;">
+      <div class="how-it-works">HOW IT WORKS</div>
+      <div class="how-images" style="display: flex; justify-content: flex-start; gap: 20px;">
+        <img src="thumbs.webp" alt="Thumbs" />
+        <img src="monthly.webp" alt="Monthly" />
+      </div>
+    </div>
+
+    <!-- Countdown Title -->
+    <div class="countdown-heading-box">RAINBET LEADERBOARD ENDS IN</div>
+
+    <!-- Countdown Timer -->
+    <div class="countdown-boxes">
+      <div class="time-box"><span id="days">00</span><br><small>DAYS</small></div>
+      <div class="time-box"><span id="hours">00</span><br><small>HOURS</small></div>
+      <div class="time-box"><span id="minutes">00</span><br><small>MINUTES</small></div>
+      <div class="time-box"><span id="seconds">00</span><br><small>SECONDS</small></div>
+    </div>
+
+    <!-- Top 3 Cards -->
+    <section class="top-cards" style="display: flex; justify-content: space-between;">
+      <div class="top-card" id="top2">Top 2</div>
+      <div class="top-card" id="top1">Top 1</div>
+      <div class="top-card" id="top3">Top 3</div>
+    </section>
+
+    <!-- Main Leaderboard -->
+    <section class="leaderboard-table">
+      <h2 style="text-align: center;">MAIN LEADERBOARD</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>RANK</th>
+            <th>USERNAME</th>
+            <th>WAGER</th>
+            <th>PRIZE</th>
+          </tr>
+        </thead>
+        <tbody id="leaderboard-body">
+          <!-- Populated by JS -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

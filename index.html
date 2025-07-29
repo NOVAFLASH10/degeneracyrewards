@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Degeneracy - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="bg.png" />
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+    }
+
+    .hero {
+      background: url('pexels-francesco-ungaro-998641.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      color: white;
+      margin-bottom: 40px;
+      background: rgba(0,0,0,0.6);
+      padding: 15px 30px;
+      border-radius: 10px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .hero-button {
+      padding: 20px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #00bfff;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      text-decoration: none;
+    }
+
+    .hero-button:hover {
+      background-color: #009acd;
+      transform: translateY(-5px);
+    }
+
+    .social-section {
+      text-align: center;
+      margin-top: 120px;
+      position: relative;
+    }
+
+    .social-section h2 {
+      font-size: 24px;
+      color: white;
+      margin-bottom: 30px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .social-icons img {
+      width: 64px;
+      height: 64px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+
+    .c1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 130px;
+    }
+
+    .c2 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 130px;
+    }
+
+    .spacer {
+      height: 140px; /* 6 lines of spacing */
+    }
+
+    .c3-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 80px;
+    }
+
+    .c3 {
+      width: 90%;
+      max-width: 800px;
+    }
+
+    .c4 {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 120px;
+    }
+
+    .c5 {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      width: 120px;
+    }
+  </style>
+</head>
+<body>
+  <header class="top-bar">
+    <div class="left-header">
+      <span class="brand">DEGENERACY</span>
+      <a href="index.html" class="nav-item float-hover">HOME</a>
+      <a href="leaderboard.html" class="nav-item float-hover">LEADERBOARD</a>
+    </div>
+    <div class="right-header">
+      <a href="https://x.com/Degeneracy420" target="_blank"><img src="xx.png" alt="X" class="icon" /></a>
+      <a href="https://discord.gg/MM3bjatyun" target="_blank"><img src="bg.png" alt="Discord" class="icon" /></a>
+      <a href="https://rainbet.com/?r=degeneracy" target="_blank"><img src="rb.png" alt="Rainbet" class="icon" /></a>
+      <a href="https://kick.com/degeneracy420" target="_blank"><img src="kick.jpeg" alt="Kick" class="icon" /></a>
+    </div>
+  </header>
+
+  <main class="hero">
+    <h1>STAY CONNECTED, ENGAGE AND EARN</h1>
+    <div class="hero-buttons">
+      <a href="leaderboard.html" class="hero-button">LEADERBOARD</a>
+      <a href="https://kick.com/degeneracy420" class="hero-button" target="_blank">WATCH STREAM AT KICK.COM</a>
+    </div>
+  </main>
+
+  <section class="social-section">
+    <img src="c1.webp" class="c1" alt="corner1" />
+    <h2>FOLLOW MY SOCIALS</h2>
+    <div class="social-icons">
+      <a href="https://kick.com/degeneracy420" target="_blank"><img src="r1.webp" alt="Kick" /></a>
+      <a href="https://www.youtube.com/@BryantCarter-z4y5e" target="_blank"><img src="r2.webp" alt="YouTube" /></a>
+      <a href="https://x.com/Degeneracy420" target="_blank"><img src="r3.webp" alt="Twitter" /></a>
+      <a href="https://discord.com/invite/MM3bjatyun" target="_blank"><img src="r4.webp" alt="Discord" /></a>
+    </div>
+    <img src="c2.webp" class="c2" alt="corner2" />
+    <div class="spacer"></div>
+
+    <div class="c3-wrapper">
+      <img src="c3.webp" class="c3" alt="banner" />
+      <img src="c4.webp" class="c4" alt="corner4" />
+      <img src="c5.webp" class="c5" alt="corner5" />
+    </div>
+  </section>
+</body>
+</html>
